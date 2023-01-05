@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+service Processing {
+  rpc Process (OrderRequest) returns (stream OrderStatusUpdate) {}
+}
+
+message OrderRequest {
+  uint32 recipeId = 1;
+  uint32 orderId = 2;
+}
+
+enum OrderStatus {
+    NEW = 1;
+    QUEUED = 2;
+    PROCESSING = 3;
+    DONE = 4;
+}
+
+message OrderStatusUpdate {
+  OrderStatus status = 1;
+}
