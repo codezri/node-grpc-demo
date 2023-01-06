@@ -20,7 +20,7 @@ npm start
 yarn start
 ```
 
-The above command will start three microservices. You can communicate with the primary microservice with the following RESTful endpoints
+The above command will start three microservices. You can communicate with the primary microservice with the following RESTful endpoints:
 
 - `POST /orders`
 - `GET /orders/{orderId}`
