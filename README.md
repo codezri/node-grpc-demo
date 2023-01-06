@@ -1,7 +1,7 @@
 # node-grpc-demo
 Implementing an inter-microservice communication system with gRPC Node.js
 
-![](./media/demo-with-postman.png)
+![](./media/demo-with-postman.gif)
 
 ## How to run this project?
 
